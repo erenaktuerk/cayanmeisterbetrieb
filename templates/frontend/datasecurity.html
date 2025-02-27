@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block cssfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/impressum.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/story.css' %}">
+
+{% endblock cssfiles %}
+{% block title%}CAYAN MEISTERBETRIEB - Datenschutz{% endblock title%}
+{% block content %}
+<div class="im-big-cont">
+    <div class="im-cont">
+            <div class="im-boxa">
+                <div class="imh1">Datenschutz</div>
+                <div class="impp2">Im folgenden möchten wir Sie darüber aufklären wie wir Ihre personbezogenen Daten verarbeiten, 
+                hier folgend als "Daten" bezeichnet. Diese Datenschutzerklärung gilt für jede Applikation, Softwareprodukt sowie bei Social Media 
+                Plattformen wie Instagram und Facebook. Die verwendeten Begriffe sind nicht gesetzesspezifisch.</div>
+               
+            </div>
+            <div class="imbox im-boxb">
+                <div class="imtext">
+                    <div class="imub">Sicherheitsmaßnahmen</div>
+                    <div class="flex-row">
+                        <div class="impp">Wir setzen bei dem Schutz Ihrer Daten stets auf den neusten Stand der Technik. Der Datentransfer findet mit SSH Verschlüsselung
+                        statt. Sie erkennen SSH Verbindung an dem 'https://' in der URL-leiste Ihres Browsers. Außerdem sind Passwörter verschlüsselt gespeichert in der Datenbank.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="imbox im-boxc">
+                <div class="imtext">
+                    <div class="imub">Löschung von Daten</div>
+                    <div class="impp">Ihre Accountdaten werden 1 Jahr nach der Löschung des Accounts gelöscht. Sollten Sie eine sofortige Löschung wünschen teilen Sie uns dies
+                    bitte mit. Anonsten werden Daten per Session auf Ihrem Browser gespeichert, damit Sie einen Bestellvorgang pausieren und später fortsetzen können. 
+                    Beim schließen des Browsers oder löschen des Cache sollten auch diese Daten gelöscht werden. Achtung, wir haben momentan die Möglichkeit Accounts zu erstellen deactiviert. Somit ist dieser Absatz obsolete bis das Accountsystem wieder online ist. Die Regelungen sind noch anwendbar bei ihrer Kontaktmitteilung. Diese wird geschützt in unserer verschlüsselten Datenbank und nach Handhabung ihrer Anfrage im laufe von 1 Jahr gelöscht.</div>
+                </div>
+            </div>
+            <div class="imbox im-boxd">
+                <div class="imtext">
+                    <div class="imub">Einwilligung (Art. 6 Abs. 1 S. 1 lit. a. DSGVO) </div>
+                    <div class="impp">Die betroffene Person hat ihre Einwilligung in die Verarbeitung der sie betreffenden personenbezogenen Daten 
+                    für einen spezifischen Zweck oder mehrere bestimmte Zwecke gegeben.</div>
+                </div>
+            </div>
+            <div class="imbox im-boxe">
+                <div class="imtext">
+                    <div class="imub">Zugriff auf Daten</div>
+                    <div class="impp">Mitarbeiter von Racine Deux haben Zugriff auf Ihre Daten, wenn Wartungsarbeiten an der Website vorgenommen werden. Passwörter sind verschlüsselt gespeichert, sodass keiner außer Ihnen selbst
+                    diese Art von Daten lesen kann. Achtung: Wir verwenden keine Cookies oder Sessions in dieser Website.</div>
+                </div>
+            </div>
+    </div>
+    <div class="ubbox">
+        <div class="ubbox-ub">Erklärung zur sofortigen Löschung Ihrer Daten.</div>
+        <div class="ubb-txt">Sie haben das Recht jederzeit Ihre Daten löschen zu lassen.
+            Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag an dem Sie oder ein von Ihnen benannter Dritter, der nicht der Beförderer ist, die Waren in Besitz genommen haben bzw. hat.<br><br>
+            Um Ihr Widerrufsrecht auszuüben, müssen Sie uns per EMail an ctmeisterbetrieb@gmail.com mittels einer eindeutigen Erklärung über Ihren Entschluss ihre Daten löschen zu lassen, informieren. Wichtig ist, dass Ihr Widerruf innerhalb der 14 tägigen Widerrufsfrist bei uns ankommt. 
+            
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock content %}

@@ -1,0 +1,341 @@
+.titlepiccon {
+    height: 420px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 630px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.backgroundpic {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.innerfilter {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, transparent, transparent, black);
+}
+
+.contact-title h3 {
+    padding: 10px;
+    font-size: 1.3em;
+    font-weight: 300;
+    margin-left: 20px;
+}
+
+.cooldiv {
+    height: 47px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #000;
+
+}
+
+
+
+.cooldiv h4 {
+    font-weight: 400;
+    font-size: 0.8em;
+}
+
+.success-div {
+    background-color: rgb(176, 255, 176);
+}
+
+
+.error-div {
+    background-color: rgb(255, 169, 169);
+}
+
+
+.todocontact {
+    height: auto;
+    width: 100%;
+    background-color: #000;
+    color: white;
+}
+
+
+.contactdiv {
+    padding: 50px 0px;
+    height: auto;
+}
+
+.contactdiv h1 {
+    text-align: center;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.inputdiv input {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.contact-flexcont {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 499px;
+    padding: 20px 0px;
+
+
+}
+
+
+.flexcenter {
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+
+}
+
+
+.inputdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+}
+
+.inputdiv input,
+.inputdiv select {
+    width: 430px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+
+    height: 38px;
+    border: 1px solid white;
+
+    margin-bottom: 24px;
+    background-color: #131313;
+    border: 1px solid #252525;
+    color: white;
+    padding: 4px;
+}
+
+.superlabel {
+    color: white;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-div-contact {
+    width: 90%;
+    height: 370px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.inputdiv label {
+    font-size: 0.8em;
+    color: rgb(131, 131, 131);
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.inputdiv {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#id_message {
+    width: 90%;
+    max-width: 450px;
+    color: white;
+    padding: 6px;
+    border-radius: 4px;
+    background-color: #131313;
+    border: 1px solid #252525;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#sendbtn {
+    padding: 10px;
+    width: 180px;
+    height: 43px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0px solid white;
+
+}
+
+#sendbtn:before {
+    filter: blur(30px);
+}
+
+#sendbtn:hover {
+    background-color: aquamarine;
+    transition: 500ms;
+}
+
+.flexcenter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+@media(max-width:800px) {
+
+    .contact-anker {
+        margin-top: 80px;
+    }
+
+    .contactdiv {
+        padding: 30px 0px;
+        height: auto;
+    }
+
+    .contact-gridcont {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inputdiv {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+
+    .inputdiv input,
+    .inputdiv select {
+        width: 379px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 96%;
+        min-width: 80%;
+
+
+        height: 40px;
+
+        margin-bottom: 20px;
+        background-color: #131313;
+        border: 1px solid #252525;
+        color: white;
+        padding: 2px;
+    }
+
+}
+
+@media(max-width:700px) {
+
+    .inputdiv input,
+    .inputdiv select {
+        width: 365px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 90%;
+        min-width: 80%;
+
+        height: 36px;
+
+
+    }
+
+    .contactdiv {
+        padding: 20px 0px;
+        height: auto;
+    }
+
+    .superlabel label {
+        font-size: 0.8em;
+    }
+
+    .inputdiv label {
+        font-size: 0.6em;
+        color: rgb(131, 131, 131);
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+
+
+}
+
+@media(max-width:600px) {
+
+    .inputdiv label {
+        font-size: 0.6em;
+        color: rgb(131, 131, 131);
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+
+    .contact-flexcont {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 90% !important;
+
+    }
+
+    .inputdiv input,
+    .inputdiv select {
+        width: 300px;
+        max-width: 76%;
+        height: 34px;
+        margin-left: auto;
+        margin-right: auto;
+
+
+
+    }
+
+    .contactdiv {
+        padding: 10px 0px;
+        height: auto;
+
+    }
+
+
+
+}

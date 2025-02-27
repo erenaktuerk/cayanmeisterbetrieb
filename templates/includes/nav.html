@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static 'css/nav.css'%}"/>
+  </head>
+  <body>
+    <header id="header">
+      <a href="{% url 'frontend:home' %}" class="site-logo" aria-label="homepage">
+        <div class="pichead">
+          <div class="logo" id="logopic" style="background-image:url({% static 'img/cayanlogo.png'%})"></div>
+          <div class="companyname">
+            <h3>KFZ.-Meisterbetrieb Cayan</h3>
+            <h6>Nur das beste für Mörfelden-Walldorf</h6>
+          </div>
+        </div>
+      </a>
+      <nav class="main-nav" id="mainnav">
+        <ul class="nav__list">
+          <li class="nav__list-item"><a href="{% url 'frontend:home'%}" class="nav__link desktoplink">Home</a></li>
+          <li class="nav__list-item">
+            <a href="{% url 'frontend:leistung'%}" class="nav__link desktoplink">Leistung</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="{% url 'frontend:contact'%}" class="nav__link desktoplink">Kontakt</a>
+          </li>
+          
+          <!--
+            <li class="nav__list-item">
+            <a href="{% url 'frontend:home'%}" class="nav__link desktoplink"></a>
+          </li>
+          <li class="nav__list-item">
+            <a href="{% url 'frontend:home' %}" class="nav__link desktoplink">About us</a>
+          </li>
+          <li class="nav__list-item"><a href="{% url 'frontend:home' %}" class="nav__link desktoplink">Gatronomie</a></li>
+
+          -->
+          
+
+
+        </ul>
+      </nav>
+      <nav class="account">
+        <div class="menu-btn whited" id="respsym">
+          <div class="menu-btn-burger">
+        </div>
+      </nav>     
+    </header>
+    <div class="respheader responsiv-nav-container closed" id="responsiv-nav-container">
+      <div class="respitem"><a href="{% url 'frontend:home'%}">Home</a></div>
+      <div class="respitem"><a href="{% url 'frontend:leistung'%}">Leistung</a></div>
+      
+      <div class="respitem"><a href="{% url 'frontend:contact'%}">Kontakt</a></div>
+    </div>
+   
+    <script>
+      // logo and navigation bar
+      // the whole navbar
+      const nav = document.getElementById("header");
+      // the responsiv icon 
+      const responsivIcon = document.getElementById("respsym");
+      const logo = document.getElementById("logopic");
+      console.log("responsivIcon", responsivIcon);
+      const menuBtn = document.querySelector('.menu-btn');
+  
+  
+      const menuSite = document.getElementById('responsiv-nav-container');
+  
+      let respNavSite = document.querySelector('.activateresp');
+      let menuOpen = false;
+  
+      menuBtn.addEventListener('click', () => {
+          if (!menuOpen) {
+              menuBtn.classList.add('open');
+              responsivIcon.classList.add("transparented");
+              nav.classList.add("transparented");
+              responsivIcon.classList.remove("whited");
+              header.classList.add("blacked");
+
+              menuOpen = true;
+              console.log(menuOpen)
+  
+              menuSite.classList.add('resp-open');
+  
+              setTimeout(function (){
+                  menuSite.style.width = "100%";
+              }, 0.5);
+  
+  
+              logo.style.display = "none"
+          } else {
+              menuBtn.classList.remove('open');
+              menuOpen = false;
+              menuSite.classList.remove('resp-open');
+              menuSite.style.width = "0";
+              logo.style.display = "block";
+              responsivIcon.classList.remove("transparented");
+              header.classList.remove("blacked");
+
+
+              nav.classList.remove("transparented");
+              responsivIcon.classList.add("whited");
+          }
+      });
+  </script>
+   
+  </body>
+</html>

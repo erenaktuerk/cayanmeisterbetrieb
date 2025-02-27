@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}"/>
+    <link rel="icon" type="image/gif/png" href="{% static 'img/cayanlogo.png'%}">
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Poppins:wght@300;400;500;600;700;800&family=Water+Brush&display=swap" rel="stylesheet">
+    <title>
+      {% block title %}
+      {% endblock title %}
+    </title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,900&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}"/>
+
+    {% block cssfiles %}
+
+    {% endblock cssfiles %}
+  </head>
+  <body>
+    <div class="fullcont">
+
+    {% include 'includes/nav.html' %}
+    <main>
+      <div class="contentbox">
+      {% block content %}
+
+      {% endblock content %}
+      </div>
+
+    </main>
+    {% include 'includes/footer.html' %}
+
+    
+  </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    {% block jsfiles %}
+    {% endblock jsfiles %}
+  </body>
+</html>

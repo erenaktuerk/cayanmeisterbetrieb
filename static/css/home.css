@@ -1,0 +1,709 @@
+.home-intro {
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 0;
+    width: 100%;
+    height: auto;
+}
+
+.innerfilter {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, black, transparent);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.innerfilter h3 {
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.standardbutton {
+    margin: 5px;
+    height: 49px;
+    font-size: 0.8em;
+    width: 200px;
+    background-color: #FF2F2F;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.home-intro h1 {
+    font-size: 3.5em;
+    max-width: 450px;
+    line-height: 1.2em;
+    margin: 30px;
+    font-weight: 700;
+    color: #496CFF;
+    background: -webkit-linear-gradient(20deg, #f1f1f1, white, #FF2F2F, #FFEBD8, #f1f1f1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.home-about-container {
+    background-color: black;
+    height: auto;
+    width: 100%;
+}
+
+.home-about {
+    padding: 120px 0;
+
+    height: auto;
+    max-width: 920px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+
+.more-stuff-grid {
+    background: #f4f4f4;
+    padding: 4em 0;
+    display: grid;
+    grid-gap: 2em;
+    align-items: center;
+    grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(200px, 400px)) minmax(1em, 1fr);
+}
+
+.columns {
+    display: flex;
+}
+
+.home-about h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+
+}
+
+.home-about h3 {
+    font-weight: 600;
+
+}
+
+#i23 {
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+    object-position: center;
+}
+
+.home-about p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.overline {
+    font-size: 0.7em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: darkgray;
+}
+
+#gastrooverline {}
+
+.home-gal {
+    height: auto;
+    background-color: #181818;
+    color: white;
+    background-image: linear-gradient(180deg, #101010, #181818, #101010);
+}
+
+.hga {
+    margin: 20px;
+    padding: 20px;
+}
+
+.hga h2 {
+    font-size: 2.8em;
+    max-width: 68%;
+    line-height: 1.1em;
+    font-weight: 800;
+}
+
+.hga p {
+    max-width: 88%;
+    font-size: 1.2em;
+}
+
+.home-gal-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 0;
+    grid-template-rows: 480px 480px 480px;
+    grid-template-areas:
+        "homga homgb"
+        "homgc homgd"
+        "homge homgf";
+
+}
+
+.homga {
+    grid-area: homga;
+}
+
+.homgb {
+    grid-area: homgb;
+}
+
+.homgc {
+    grid-area: homgc;
+}
+
+.homgd {
+    grid-area: homgd;
+}
+
+.homge {
+    grid-area: homge;
+}
+
+.homgf {
+    grid-area: homgf;
+}
+
+
+.fade h3 {
+    letter-spacing: 2px;
+}
+
+.fade p {
+    letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+.homeg {
+    padding: 30px;
+    margin: 30px 0px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hgastro-grid {
+    display: grid;
+    max-width: 920px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 120px 0;
+    grid-template-rows: 380px 380px 80px;
+    grid-template-areas:
+        "hga hga hgb"
+        "hgc hgd hge"
+        "hgf hgf hgf";
+
+}
+
+
+
+.symitem {
+    height: 62px;
+    width: 62px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.gasgrid {
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    flex-direction: column;
+    margin: 10px;
+}
+
+.hge,
+.hgd,
+.hgc {
+    align-items: center;
+    text-align: center;
+}
+
+.hge p,
+.hgd p,
+.hgc p {
+    font-size: 0.9em;
+}
+
+.hga {
+    grid-area: hga;
+}
+
+.hgb {
+    grid-area: hgb;
+}
+
+.hgc {
+    grid-area: hgc;
+}
+
+.hgd {
+    grid-area: hgd;
+}
+
+.hge {
+    grid-area: hge;
+}
+
+
+.hgf {
+    grid-area: hgf;
+    align-items: center;
+}
+
+.columns2 {
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:
+        "300px 130px";
+    grid-template-areas:
+        "col2 col3 col4"
+        "col5 col5 col5";
+
+
+}
+
+.fade {
+    padding: 6px;
+}
+
+#d28w2 {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.col3 {
+    grid-area: col3;
+}
+
+.col4 {
+    grid-area: col4;
+}
+
+.col5 {
+    grid-area: col5;
+}
+
+.pic {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+.home-app-grid {
+    display: grid;
+    padding: 120px 0px;
+    max-width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 400px 170px 40px;
+    grid-template-areas:
+        "ag-a ag-a"
+        "ag-b ag-b"
+        "ag-c ag-c"
+        "ag-d ag-e";
+
+}
+
+.ag-a {
+    grid-area: ag-a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ag-a h1 {
+    font-size: 2.9em;
+}
+
+.ag-a p {
+    margin-top: -20px;
+    font-size: 1.3em;
+
+}
+
+.ag-b {
+    grid-area: ag-b;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ag-c {
+    grid-area: ag-c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #626262;
+}
+
+.ag-d {
+    grid-area: ag-d;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #131313;
+    border-radius: 5px;
+    height: 70px;
+    width: 140px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ag-e {
+    grid-area: ag-e;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    height: 70px;
+    width: 140px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.leistungsbox {
+    background-color: black;
+    height: auto;
+    width: 100%;
+}
+
+.innerleistungsbox {
+    max-width: 920px;
+    padding: 60px 0px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.l1 h1 {
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+
+}
+
+
+.l2 {
+    display: grid;
+    width: 100%;
+    height: auto;
+    margin-bottom: 70px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "lia lib lic lid";
+}
+
+.lia {
+    grid-area: lia;
+}
+
+.lib {
+    grid-area: lib;
+}
+
+.lic {
+    grid-area: lic;
+}
+
+.lid {
+    grid-area: lid;
+}
+
+
+.litxt {
+    color: white;
+    margin-top: 20px;
+}
+
+.liicon {
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+.litem {
+    background-color: #121212;
+    padding: 20px;
+    width: 160px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+@media(max-width:780px) {
+
+    .home-intro h1 {
+        font-size: 2.5em;
+        margin: 50px;
+        max-width: 76%;
+
+    }
+
+    .columns2 {
+        grid-template-columns: 1fr;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-rows:
+            auto auto auto 120px;
+        grid-template-areas:
+            "col2"
+            "col3"
+            "col4"
+            "col5";
+    }
+
+    .home-gal-grid {
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding: 30px 0px;
+        padding-bottom: 0px;
+        grid-template-rows: 300px 380px 300px 380px 300px 380px;
+        grid-template-areas:
+            "homga"
+            "homgb"
+            "homgd"
+            "homgc"
+            "homge"
+            "homgf";
+    }
+
+
+
+    .hgastro-grid {
+        display: grid;
+        max-width: 920px;
+        grid-template-columns: 1fr;
+
+        grid-template-rows: 200px auto auto auto auto auto;
+        grid-template-areas:
+            "hgb"
+            "hga"
+            "hgc"
+            "hgd"
+            "hge"
+            "hgf";
+
+    }
+
+
+
+    .fade {
+        margin: 20px;
+    }
+
+    .home-about {
+        margin: 0px;
+    }
+
+    .homeg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .homeg p {
+        max-width: 88%;
+        text-align: center;
+    }
+
+    .homeg h2 {
+        text-align: center;
+        max-width: 80%;
+    }
+
+    .txthome {
+        padding-bottom: 30px;
+    }
+
+    .gasgrid {
+        margin-bottom: 30px;
+    }
+
+    .gasgrid p {
+        max-width: 78%;
+    }
+
+    .home-gal-grid {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+
+    }
+
+    #picend {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .home-about h2 {
+        font-size: 2.2em;
+        max-width: 76%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .fade,
+    #d28w2 {
+        max-width: 76%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+
+    .standardbutton {
+        margin: 5px;
+        height: 40px;
+        font-size: 0.7em;
+        width: 160px;
+        background-color: #FF2F2F;
+        border-radius: 45px;
+
+    }
+
+    .l2 {
+        display: grid;
+        width: auto;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 70px;
+        justify-content: flex-end;
+
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 160px 160px;
+        grid-template-areas:
+            "lia lib"
+            "lic lid";
+    }
+
+    .lia {
+        grid-area: lia;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .litem {
+        margin: 20px;
+    }
+
+    .lib {
+        grid-area: lib;
+    }
+
+    .lic {
+        grid-area: lic;
+    }
+
+    .lid {
+        grid-area: lid;
+    }
+
+
+    .litxt {
+        margin-top: 20px;
+        font-size: 0.8em;
+    }
+
+    .liicon {
+        width: 40px;
+        height: 40px;
+
+    }
+
+
+
+
+
+    .litem {
+        background-color: #121212;
+        padding: 20px;
+        width: 126px;
+        height: 87px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+
+}

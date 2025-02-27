@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}LEISTUNG - CAYAN KFZ MEISTERBETRIEB{% endblock title %}
+{% block cssfiles %}
+    <link rel="stylesheet" href="{% static 'css/leistung.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}"/>
+
+
+{% endblock cssfiles %}
+
+
+{% block content %}
+    <div class="leistungcont">
+      <div class="leist-grid">
+        <div class="ga">
+
+          <h1>Unsere Leistungen</h1>
+          <p>Hier ein kurzer Einblick in unsere Servicepalette. Vereibaren Sie jetzt Ihren Termin und erfahren Sie jetzt mehr von unserem exklusiven Service.</p>
+        </div>
+        <div class="gb  leiitem">
+          <div class="liicon" style="background-image:url({% static 'img/reifenicon.png'%})"></div>
+            <div class="litxt">Reifenwechsel</div>
+
+        </div>
+
+        <div class="gc  leiitem">
+          <div class="liicon" style="background-image:url({% static 'img/reifenlagerung.png'%})"></div>
+            <div class="litxt">Reifenlagerung</div>
+
+        </div>
+        <div class="gd  leiitem">
+          <div class="liicon" style="background-image:url({% static 'img/checkupicon.png'%})"></div>
+            <div class="litxt">Fahrzeug Check-up</div>
+
+        </div>
+        <div class="ge  leiitem">
+          <div class="liicon" style="background-image:url({% static 'img/kfzreparaturicon.png'%})"></div>
+            <div class="litxt">Fahrzeug Reparatur</div>
+
+        </div>
+        <div class="gf  leiitem">
+          <div class="liicon" style="background-image:url({% static 'img/reifenicon.png'%})"></div>
+            <div class="litxt">Erstklassiger Service</div>
+
+        </div>
+        <div class="gh  leiitem">
+          <div class="liicon" style="background-image:url({% static 'img/hacken.png'%})"></div>
+            <div class="litxt">Batterieservice</div>
+
+        </div>
+        <div class="gi  leiitem">
+          <div class="liicon" style="background-image:url({% static 'img/motorservice.png'%})"></div>
+            <div class="litxt">Umfassender Motorservice</div>
+
+        </div>
+        <div class="gj  leiitem">
+          <div class="liicon" style="background-image:url({% static 'img/tuning.png'%})"></div>
+          <div class="litxt">Fahrzeugpflege</div>
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+
+
+    
+
+{% endblock content %}
+{% block jsfiles %}
+
+
+
+{% endblock jsfiles %}

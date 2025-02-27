@@ -1,0 +1,223 @@
+.footergrid {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 920px;
+}
+
+
+.footercont {
+    background-color: #1D1D1D;
+    width: 100%;
+    height: auto;
+}
+
+
+.footergrid {
+    max-width: 920px;
+    display: grid;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 60px 40px;
+    grid-template-areas:
+        "fg2 fg4 fg4 fg4"
+        "fg3 fg3 fg3 fg3";
+}
+
+
+
+.fg2 {
+    grid-area: fg2;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.fg3 {
+    grid-area: fg3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.fg3 a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.7em;
+}
+
+.fg4 a {
+    text-decoration: none;
+}
+
+.racinelogo {
+    width: 120px;
+    height: 70px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.racinelogo:hover {
+    opacity: 0.7;
+    cursor: pointer;
+    transition: 450ms;
+}
+
+.fg3 a:hover {
+    opacity: 0.6;
+    cursor: pointer;
+    transition: 450ms;
+}
+
+.fg4 {
+    grid-area: fg4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.teliconfield {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    height: 30px;
+    width: 120px;
+    border-radius: 20px;
+    background-color: #626262;
+    color: white;
+    text-decoration: none;
+    font-size: 0.7em;
+
+}
+
+.telicon {
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.smalllogo {
+    width: 140px;
+    height: 70px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.fg1 p {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: 600;
+
+}
+
+.socialicon {
+    width: 27px;
+    height: 27px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.fg6 p {
+    font-size: 0.8em;
+}
+
+.fg4 a:hover {
+    opacity: 0.6;
+    transition: 230ms;
+    cursor: pointer;
+}
+
+.fg5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+    background-color: #181818;
+    color: white;
+    text-align: center;
+    font-size: 0.7em;
+    font-weight: 400;
+    color: #bababa;
+
+}
+
+.fg2 div {
+    font-weight: 400;
+    font-size: 0.5em;
+    color: darkgray;
+}
+
+.fg2 a {
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+
+}
+
+@media(max-width:950px) {
+    .footergrid {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .footergrid {
+        max-width: 97%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 60px 60px 40px;
+        grid-template-areas:
+            "fg2 fg2"
+            "fg4 fg4"
+            "fg3 fg3";
+    }
+
+    .fg3 a {
+        color: white;
+        text-decoration: none;
+        font-size: 0.6em;
+    }
+
+    .socialicon {
+        width: 23px;
+        height: 23px;
+    }
+
+    .teliconfield {
+
+        font-size: 0.6em;
+
+    }
+
+    .telicon {
+        width: 18px;
+        height: 18px;
+
+    }
+
+    .fg4 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .fg5 {
+        font-size: 0.5em;
+    }
+
+
+}

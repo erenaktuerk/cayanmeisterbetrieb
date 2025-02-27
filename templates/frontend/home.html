@@ -1,0 +1,284 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}CAYAN - KFZ MEISTERBETRIEB{% endblock title %}
+{% block cssfiles %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}"/>
+
+{% endblock cssfiles %}
+
+
+{% block content %}
+    <div class="home-intro" id="homeintro" style="background-image:url({% static 'img/titlepic.jpeg'%})">
+      <div class="innerfilter">
+        <h3>KFZ-Meisterbetrieb Cayan</h3>
+        <h1 id="h211">Lieber vorsorgen, als im Nachhinein bereuen.</h1>
+        <a href="{% url 'frontend:contact'%}" class="standardbutton">Jetzt kontaktieren ></a>
+
+      </div>
+    </div>
+   
+    <div class="home-about-container">
+        <div class="home-about">
+            <h2>Qualität und optimaler Service.</h2>
+            <div class="columns2">
+                <div class="col2 fade" id="d282">
+                <h3>Keine versteckten Kosten.</h3>
+                <p>
+                    Bei uns wissen Sie von anfang an, was Sie für Ihr Geld bekommen. Wir legen größten Wert auf Transparenz und gute Kommunikation mit unseren Kunden
+                </p>
+                </div>
+                <div class="col3 fade" id="d28w2">
+                <h3>Der Meisterbetrieb in Mörfelden-Walldorf.</h3>
+                <p>
+                    Kommen Sie vorbei und lernen unseren Betrieb besser kennen. Wir freuen uns auf Sie.
+                </p>
+                </div>
+                <div class="col4 fade" id="dwqqq82">
+                <h3>Ausgezeichneter Service.</h3>
+                <p>Unser Personal ist in höchstem Maße darauf ausgebildet die Ursache für technische Probleme zu erkennen und zu beheben. Das Auto ist für uns mehr als ein Fahrzeug. Es ist unsere Leidenschaft und unser Handwerk.
+                    
+                </p>
+                </div>
+                <div class="col5 pic"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="home-gal">
+      <div class="home-gal-grid">
+        <div class="homga homeg txthome">
+          <h2>Aus liebe zum Auto.</h2>
+          <p>Moderne Automobile sind hochkomplizierte Computer. Unser Personal ist geschult auch mit fortgeschrittenster Technologie umgehen zu können um Ihnen einen Rundum Service zu bieten.</p>
+        </div>
+        <div class="homgb homeg" style="background-image:url({% static 'img/c3.jpg'%})"></div>
+        <div class="homgc homeg" style="background-image:url({% static 'img/mercedes.jpg'%})"></div>
+        <div class="homgd homeg txthome">
+          <h2>Pflege und Wartung.</h2>
+          <p>
+            Regelmößige Pflege für Ihr Auto ist unerlässlich. Wir kümmern uns gerne darum. Kontaktieren Sie uns jetzt und vereinbaren Sie einen Termin.
+          </p>
+        </div>
+        <div class="homge homeg txthome">
+          <h2>Top Konditionen.</h2>
+          <p>
+            Bei uns erwarten Sie transparente Preise. Kommen Sie vorbei oder kontaktieren Sie uns jetzt für mehr Informationen.
+          </p>
+        </div>
+        <div class="homgf homeg"  id="picend" style="background-image:url({% static 'img/c12.jpg'%})"></div>
+      </div>
+    </div>
+
+    <div class="leistungsbox">
+      <div class="innerleistungsbox">
+        <div class="l1">
+          <h1>Unsere Leistung</h1>
+        </div>
+        <div class="l2">
+          <div class="litem lia">
+            <div class="liicon" style="background-image:url({% static 'img/kfzreparaturicon.png'%})"></div>
+            <div class="litxt">KFZ. Reparatur</div>
+          </div>
+          <div class="litem lib">
+            <div class="liicon" style="background-image:url({% static 'img/motorservice.png'%})"></div>
+            <div class="litxt">Motorservice</div>
+          </div>
+          <div class="litem lic">
+            <div class="liicon" style="background-image:url({% static 'img/reifenicon.png'%})"></div>
+            <div class="litxt">Reifenwechsel</div>
+          </div>
+          <div class="litem lid">
+            <div class="liicon" style="background-image:url({% static 'img/lackieren.png'%})"></div>
+            <div class="litxt">Lackierung</div>
+          </div>
+        </div>
+        <div class="l3">
+          <a href="{% url 'frontend:leistung'%}" class="standardbutton">Mehr erfahren ></a>
+        </div>
+
+
+      </div>
+    </div>
+
+    
+
+  <script src="{% static 'js/observer.js' %}"></script>
+{% endblock content %}
+{% block jsfiles %}
+<script>
+
+  let currentScrollPosition = 0;
+  let scrollAmount = 420;
+
+  const sCont = document.querySelector(".story-container");
+  const hScroll = document.querySelector(".horizontal-scroll");
+
+  const btnScrollLeft = document.querySelector("#btn-scroll-left");
+  const btnScrollRight = document.querySelector("#btn-scroll-right");
+
+  btnScrollLeft.style.opacity = "0";
+
+
+  let maxScroll = -sCont.offsetWidth + hScroll.offsetWidth;
+
+  function scrollHorizontally(val){
+      currentScrollPosition += (val * scrollAmount);
+      if(currentScrollPosition > 0 ){
+          currentScrollPosition = 0
+          btnScrollLeft.style.opacity = "0";
+
+      }else{
+          btnScrollLeft.style.opacity="1";
+      }
+      if(currentScrollPosition < maxScroll){
+          currentScrollPosition = maxScroll;
+          btnScrollRight.style.opacity = "0";
+
+      }else{
+          btnScrollRight.style.opacity = "1";
+
+
+      }
+      sCont.style.left = currentScrollPosition + "px";
+  }
+
+</script>
+  <script>
+      gsap.registerPlugin(ScrollTrigger);
+      ScrollTrigger.defaults({
+      toggleActions: "restart none none none",
+      });   
+  
+      // This is the YumaBag Text here
+      gsap.from("#h211", {
+          scrollTrigger: "#homeintro",
+          toggleActions: "restart none none none",
+          duration: 1.2,
+          x: 220,
+          opacity:0,
+          ease:"ease.in"
+      });
+
+      gsap.from("#d282", {
+        scrollTrigger: "#columns2",
+        toggleActions: "restart none none none",
+        duration: 0.8,
+        x: 420,
+        opacity:0,
+        ease:"ease.in"
+    });
+
+    gsap.from("#d28w2", {
+      scrollTrigger: "#columns2",
+      toggleActions: "restart none none none",
+      duration: 1.2,
+      x: 220,
+      opacity:0,
+      ease:"ease.in"
+  });
+
+  gsap.from("#dwqqq82", {
+    scrollTrigger: "#columns2",
+    toggleActions: "restart none none none",
+    duration: 0.92,
+    x: -220,
+    opacity:0,
+    ease:"ease.in"
+});
+
+//picture block
+gsap.from(".homga", {
+  scrollTrigger: ".homga",
+  toggleActions: "restart none none none",
+  duration: 0.92,
+  x: -220,
+  opacity:0,
+  ease:"ease.in"
+});
+gsap.from(".homgb", {
+  scrollTrigger: ".homgb",
+  toggleActions: "restart none none none",
+  duration: 0.52,
+  x: 320,
+  opacity:0,
+  ease:"ease.in"
+});
+gsap.from(".homgc", {
+  scrollTrigger: ".homgc",
+  toggleActions: "restart none none none",
+  duration: 0.72,
+  x: -420,
+  opacity:0,
+  ease:"ease.in"
+});
+
+
+gsap.from(".homgd", {
+  scrollTrigger: ".homgd",
+  toggleActions: "restart none none none",
+  duration: 0.72,
+  x: 420,
+  opacity:0,
+  ease:"ease.in"
+});
+gsap.from(".homge", {
+  scrollTrigger: ".homge",
+  toggleActions: "restart none none none",
+  duration: 1.1,
+  x: -320,
+  opacity:0,
+  ease:"ease.in"
+});
+
+gsap.from(".homgf", {
+  scrollTrigger: ".homgf",
+  toggleActions: "restart none none none",
+  duration: 0.8,
+  delay:1,
+  x: 320,
+  opacity:0,
+  ease:"ease.in"
+});
+
+
+gsap.from(".hgb", {
+  scrollTrigger: ".hgb",
+  toggleActions: "restart none none none",
+  duration: 0.6,
+  delay:1,
+  x: 420,
+  opacity:0,
+  ease:"ease.in"
+});
+gsap.from(".hgc", {
+  scrollTrigger: ".hgc",
+  toggleActions: "restart none none none",
+  duration: 0.7,
+  delay:1,
+  x: -320,
+  opacity:0,
+  ease:"ease.in"
+});
+gsap.from(".hgd", {
+  scrollTrigger: ".hgd",
+  toggleActions: "restart none none none",
+  duration: 0.8,
+  delay:1,
+  x: -320,
+  opacity:0,
+  ease:"ease.in"
+});
+
+gsap.from(".hge", {
+  scrollTrigger: ".hge",
+  toggleActions: "restart none none none",
+  duration: 0.8,
+  delay:1,
+  x: 320,
+  opacity:0,
+  ease:"ease.in"
+});
+
+  </script>
+{% endblock jsfiles %}

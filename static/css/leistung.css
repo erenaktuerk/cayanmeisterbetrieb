@@ -1,0 +1,149 @@
+.leistungcont {
+    height: auto;
+    width: 100%;
+    background-color: #000;
+}
+
+.leist-grid {
+    display: grid;
+    padding: 120px 0px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 240px 240px 240px 240px 240px;
+    max-width: 920px;
+    width: 90%;
+    margin-left: auto;
+    color: white;
+    background-color: #000;
+    margin-right: auto;
+    grid-template-areas:
+        "ga ga"
+        "gb gc"
+        "gd ge"
+        "gf gh"
+        "gi gj";
+
+}
+
+.leiitem {
+    background-color: #131313;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.liicon {
+    width: 35px;
+    height: 35px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.litxt {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    color: white;
+    text-align: center;
+
+}
+
+.ga {
+    grid-area: ga;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ga h1 {
+    font-weight: 400;
+    font-size: 2.3em;
+    margin-bottom: -10px;
+}
+
+.ga p {
+    font-size: 1.1em;
+    max-width: 560px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.gb {
+    grid-area: gb;
+}
+
+.gc {
+    grid-area: gc;
+}
+
+.gd {
+    grid-area: gd;
+}
+
+.ge {
+    grid-area: ge;
+}
+
+.gf {
+    grid-area: gf;
+}
+
+.gh {
+    grid-area: gh;
+}
+
+.gai {
+    grid-area: gi;
+}
+
+.gj {
+    grid-area: gj;
+}
+
+@media(max-width:800px) {
+    .ga h1 {
+        text-align: center;
+        font-size: 2em;
+
+    }
+
+    .leist-grid {
+        display: grid;
+        padding: 120px 0px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 460px 240px 240px 240px 240px 240px 240px 240px 240px;
+        max-width: 920px;
+        width: 90%;
+        margin-left: auto;
+        color: white;
+        background-color: #000;
+        margin-right: auto;
+        grid-template-areas:
+            "ga"
+            "gb"
+            "gc"
+            "gd"
+            "ge"
+            "gf"
+            "gh"
+            "gi"
+            "gj";
+
+    }
+}
+
+@media(max-width:700px) {
+
+    .ga h1 {
+        text-align: center;
+        font-size: 1.9em;
+        margin-bottom: 15px;
+
+    }
+
+}

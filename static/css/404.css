@@ -1,0 +1,22 @@
+.bigerrorcont h1 {
+    font-size: 3.8em;
+    font-weight: 700;
+    max-width: 540px;
+    line-height: 0.9em;
+
+}
+
+.bigerrorcont {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bigerrorcont p {
+    font-size: 1.4em;
+    max-width: 500px;
+    line-height: 1.5em;
+}

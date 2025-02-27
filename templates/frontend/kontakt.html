@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}KONTAKT - CAYAN{% endblock title %}
+{% block cssfiles %}
+    <link rel="stylesheet" href="{% static 'css/kontakt.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}"/>
+
+{% endblock cssfiles %}
+{% block content %}
+<div style="width:100%; height:100px;background-color:black"></div>
+<div class="backgroundpic">
+<div class="titlepiccon" style="padding-top:100px; background-image:url({% static 'img/c2.jpg'%}); ">
+    <div class="innerfilter"></div>
+</div>
+</div>
+<div class="todocontact">
+    <div class="contactdiv">
+        <h1>Kontakt</h1>
+        {% if success %}
+        <div class="cooldiv success-div">
+            <h4>{{success}}</h4>
+        </div>
+    {% endif %}
+    {% if error %}
+        <div class="cooldiv error-div">
+            <h4>{{error}}</h4>
+        </div>
+    {% endif %}
+    <form id="contactform" method="post" action="{% url 'frontend:contact' %}">
+        {% csrf_token %}
+        <div class="contact-flexcont">
+            {% for field in form  %}
+            <div class="inputdiv">
+                <div class="superlabel">
+                    {{field.label}}
+                </div>
+                {{field}}
+                
+            </div>
+            {% endfor %}
+        </div>
+        
+        <div class="flexcenter">
+            <input type="submit" id="sendbtn" value="Sende Nachricht">
+        </div>
+    </form>
+    <div>
+<div>
+   
+
+{% endblock content %}
+{% block jsfiles %}
+{% endblock jsfiles %}
